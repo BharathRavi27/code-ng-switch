@@ -4,9 +4,9 @@ Simple VS Code extension enabling file switching between template and controller
 
 ## Features
 
-Press `cmd+y` or `ctrl+y` to make te switch!
+Press `cmd+y` or `ctrl+y` to make the switch!
 
-Or type `switch` in vscode commande pallete(`Ctrl+Shift+P`)
+Or type `switch` in vscode command pallete(`Ctrl+Shift+P`)
 
 ## Release Notes
 

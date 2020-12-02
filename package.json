@@ -3,6 +3,8 @@
 	"displayName": "ng-switch",
 	"description": "simple file switch between controller and template files in angular projects",
 	"version": "0.0.1",
+	"publisher": "BharathRavi",
+	"icon": "https://res.cloudinary.com/bharath-ravi/image/upload/v1606920782/common/ng-switch/icon_iqc3yj.png",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
