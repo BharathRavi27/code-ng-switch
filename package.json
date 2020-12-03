@@ -2,7 +2,7 @@
 	"name": "ng-switch",
 	"displayName": "ng-switch",
 	"description": "simple file switch between controller and template files in angular projects",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"publisher": "BharathRavi",
 	"icon": "icon.png",
 	"repository": {
