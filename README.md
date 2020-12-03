@@ -1,6 +1,8 @@
-# ng-switch README
+# ng-switch
 
 Simple VS Code extension enabling file switching between template and controller files in Angular projects
+
+![demo](demo.gif)
 
 ## Features
 
