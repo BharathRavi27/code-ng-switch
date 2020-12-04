@@ -2,23 +2,40 @@ import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand("ng-switch.switch", () => {
-    const path = vscode.window.activeTextEditor?.document.uri.fsPath || "";
-    var pathArr = path.split("/");
-    var isHtml = pathArr[pathArr.length - 1].endsWith(".html") ? true : false;
-    if (isHtml) {
-      pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(
-        ".html",
-        ".ts"
+    const path: string =
+      vscode.window.activeTextEditor?.document.uri.fsPath || "";
+    var pathArr: string[] = path.split("/");
+    const isInsideNgFile: boolean = pathArr[pathArr.length - 1].includes(
+      ".component"
+    );
+    if (!isInsideNgFile) {
+      vscode.window.showWarningMessage(
+        "You are probably not inside an Angular component file"
       );
-    } else {
-      pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(
-        ".ts",
-        ".html"
-      );
+      return;
     }
-    var openFilePath = pathArr.join("/");
-    var openPath = vscode.Uri.file(openFilePath);
-    vscode.workspace.openTextDocument(openPath).then((doc) => {
+    const fileNameArr: string[] = pathArr[pathArr.length - 1].split(".");
+    switch (fileNameArr[fileNameArr.length - 1]) {
+      case "ts":
+      case "css":
+      case "scss":
+      case "sass":
+      case "less":
+        fileNameArr[fileNameArr.length - 1] = "html";
+
+        pathArr[pathArr.length - 1] = fileNameArr.join(".");
+        break;
+      case "html":
+      default:
+        pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(
+          ".html",
+          ".ts"
+        );
+        break;
+    }
+    var openFilePath: string = pathArr.join("/");
+    var vsCodeOpenPath: vscode.Uri = vscode.Uri.file(openFilePath);
+    vscode.workspace.openTextDocument(vsCodeOpenPath).then((doc) => {
       vscode.window.showTextDocument(doc);
     });
   });

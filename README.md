@@ -10,6 +10,8 @@ Press `cmd+y` or `ctrl+y` to make the switch!
 
 Or type `switch` in vscode command pallete(`Ctrl+Shift+P`)
 
+If in a stylesheet, pressing `Cmd+Y`/`Ctrl+Y` will switch to the templating file
+
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
