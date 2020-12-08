@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.1.0]
 
 - Added support for stylesheet switching support
+
+## [1.1.1]
+
+- Bug fixes on Ubuntu key binding
