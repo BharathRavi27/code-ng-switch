@@ -15,3 +15,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.1.1]
 
 - Bug fixes on Ubuntu key binding
+
+## [1.2]
+
+- Support switching between testing file and controller
