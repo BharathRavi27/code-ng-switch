@@ -1,64 +1,73 @@
 {
-	"name": "ng-switch",
-	"displayName": "ng-switch",
-	"description": "simple file switch between controller and template files in angular projects",
-	"version": "1.1.1",
-	"publisher": "BharathRavi",
-	"icon": "icon.png",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/BharathRavi27/code-ng-switch.git"
-	},
-	"engines": {
-		"vscode": "^1.51.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:ng-switch.switch"
-	],
-	"main": "./dist/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "ng-switch.switch",
-				"title": "switch"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "ng-switch.switch",
-				"key": "ctrl+alt+y",
-				"mac": "cmd+y"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run package",
-		"compile": "webpack --devtool nosources-source-map --config ./build/node-extension.webpack.config.js",
-		"watch": "webpack --watch --devtool nosources-source-map --info-verbosity verbose --config ./build/node-extension.webpack.config.js",
-		"package": "webpack --mode production --config ./build/node-extension.webpack.config.js",
-		"test-compile": "tsc -p ./",
-		"test-watch": "tsc -watch -p ./",
-		"pretest": "npm run test-compile && npm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.51.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.0",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.9.0",
-		"@typescript-eslint/eslint-plugin": "^4.1.1",
-		"@typescript-eslint/parser": "^4.1.1",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"typescript": "^4.0.2",
-		"vscode-test": "^1.4.0",
-		"ts-loader": "^8.0.3",
-		"webpack": "^4.44.1",
-		"webpack-cli": "^3.3.12"
-	}
+  "name": "ng-switch",
+  "displayName": "ng-switch",
+  "description": "simple file switch between controller and template files in angular projects",
+  "version": "1.1.1",
+  "publisher": "BharathRavi",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BharathRavi27/code-ng-switch.git"
+  },
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ng-switch.switch"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ng-switch.switch",
+        "title": "switch"
+      },
+      {
+        "command": "ng-switch.switchspec",
+        "title": "switchspec"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ng-switch.switch",
+        "key": "ctrl+alt+y",
+        "mac": "cmd+y"
+      },
+      {
+        "command": "ng-switch.switchspec",
+        "key": "ctrl+alt+u",
+        "mac": "cmd+u"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack --devtool nosources-source-map --config ./build/node-extension.webpack.config.js",
+    "watch": "webpack --watch --devtool nosources-source-map --info-verbosity verbose --config ./build/node-extension.webpack.config.js",
+    "package": "webpack --mode production --config ./build/node-extension.webpack.config.js",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "pretest": "npm run test-compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.51.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.0.2",
+    "vscode-test": "^1.4.0",
+    "ts-loader": "^8.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
