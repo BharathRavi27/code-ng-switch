@@ -1,3 +1,4 @@
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/BharathRavi27/code-ng-switch?labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit%20Reviews)
 # ng-switch
 
 Simple VS Code extension enabling file switching between template and controller files in Angular projects
