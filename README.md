@@ -37,3 +37,5 @@ Added support for stylesheet switching.
 Key binding for non-mac devices changed to `Ctrl+Alt+Y`.
 
 **Enjoy!**
+
+Code rabbit 
