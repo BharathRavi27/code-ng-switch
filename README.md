@@ -7,11 +7,11 @@ Simple VS Code extension enabling file switching between template and controller
 
 ## Features
 
-Press `Ctrl+Alt+Y` or `Cmd+Y`(mac) to make the switch!
+Press `Ctrl+Alt+H` or `Cmd+H`(mac) to make the switch!
 
 Or type `switch` in vscode command pallete(`Ctrl+Shift+P`)
 
-If in a stylesheet, pressing `Ctrl+Alt+Y` or `Cmd+Y` will switch to the templating file
+If in a stylesheet, pressing `Ctrl+Alt+H` or `Cmd+H` will switch to the templating file
 
 ## Keybinding conflict issue
 
@@ -19,7 +19,7 @@ Some devices might have keybinding conflicts with other extensions. In that case
 
 - Open vscode command pallete(`Ctrl+Shift+P`).
 - Search for **Open Keyboard Shortcuts**.
-- Find `Alt+Ctrl+Y`.
+- Find `Alt+Ctrl+H`.
 - If there are multiple entries, assign a different binding for `switch` command as convenience.
 
 ## Release Notes
