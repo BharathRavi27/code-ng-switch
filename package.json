@@ -34,7 +34,7 @@
       {
         "command": "ng-switch.switch",
         "key": "ctrl+alt+y",
-        "mac": "cmd+y"
+        "mac": "cmd+h"
       },
       {
         "command": "ng-switch.switchspec",
