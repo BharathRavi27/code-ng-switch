@@ -37,3 +37,7 @@ Added support for stylesheet switching.
 Key binding for non-mac devices changed to `Ctrl+Alt+Y`.
 
 **Enjoy!**
+
+## AI Contribution
+
+This sandbox system was used to help automate updating this README file.
